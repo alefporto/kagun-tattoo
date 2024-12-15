@@ -1,0 +1,16 @@
+services:
+  database:
+    image: postgres:17
+    container_name: database_kagun
+    restart: always
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_USER=user
+      - POSTGRES_PASSWORD=password
+      - POSTGRES_DB=kagun
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+volumes:
+  postgres_data:
