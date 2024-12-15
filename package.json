@@ -6,10 +6,10 @@
   "main": "server.js",
   "scripts": {
     "start": "node src/app.js",
-    "build": "echo 'Building application...'",
-    "vercel-start": "node src/app.js"
+    "build": "vercel build",
+    "vercel-start": "node src/app.js",
+    "vercel-build": "node src/app.js"
   },
-
   "author": "Alef",
   "dependencies": {
     "@prisma/client": "^6.0.1",

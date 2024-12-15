@@ -67,7 +67,7 @@ export async function logarTatuador(req, res) {
 
         return res.status(200).json({ token, mensagem: 'Login realizado com sucesso.' });
     } catch(erro) {
-        console.error(erro);
+        console.log(erro);
         return res.status(500).json({ mensagem: 'Erro ao realizar login.' });
     }
 }
