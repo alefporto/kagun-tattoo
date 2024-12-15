@@ -1,12 +1,13 @@
 {
-  "name": "backend",
+  "name": "kagun-backend",
   "version": "0.0.0",
   "description": "Kagun Tattoo Application",
   "type": "module",
   "main": "server.js",
   "scripts": {
     "start": "node src/app.js",
-    "dev": "nodemon src/app.js"
+    "dev": "nodemon src/app.js",
+    "build": "echo 'No build step needed for backend project'"
   },
   "author": "Alef",
   "dependencies": {

@@ -3,9 +3,6 @@ import { cadastrarTatuador, logarTatuador } from '../controllers/authController.
 
 const router = express.Router();
 
-router.get('/', () => {
-    res.json({ mensagem: 'teste' })
-})
 router.post('/cadastro', cadastrarTatuador);
 router.post('/login', logarTatuador);
 
